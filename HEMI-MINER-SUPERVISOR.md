@@ -39,7 +39,16 @@ stderr_logfile_backups=10
 ### 4. supervisorctl update
 ### 5. supervisorctl restart hemi
 ### 6. check status with 
-   $supervisorctl status 
-![screenshot](hemistatus.png)
-
+   $supervisorctl status
+###  
+![screenshot](image.png)
+###
+```
+if you want restart service hemi miner 
+$ supervisorctl restart hemi
+``` 
+```
+The command below is to view the logs 
+$ tail -f /var/log/hemi-access.log
+```
 
