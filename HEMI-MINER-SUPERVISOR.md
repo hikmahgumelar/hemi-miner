@@ -51,4 +51,5 @@ $ supervisorctl restart hemi
 The command below is to view the logs 
 $ tail -f /var/log/hemi-access.log
 ```
+![screenshot](Screenshot 2024-10-02 at 21.13.21.png)
 
