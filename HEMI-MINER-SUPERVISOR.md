@@ -9,7 +9,7 @@
 ```sh
 $tar --strip-components=1 -xzvf heminetwork_v0.4.3_linux_amd64.tar.gz -C hemi
 ```
-resource: https://github.com/ademulyanaDEV/hemi-miner/blob/main/hemi-minerv0.4.3.md
+source: https://github.com/ademulyanaDEV/hemi-miner/blob/main/hemi-minerv0.4.3.md
 
 # Install supervisord 
 
