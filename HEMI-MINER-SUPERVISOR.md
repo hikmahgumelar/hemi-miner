@@ -27,12 +27,12 @@ process_name=%(program_name)s
 autostart=true
 autorestart=true
 redirect_stderr=false
-stdout_logfile=/var/log/hemhemi
+stdout_logfile=/var/log/hemi-access.log
 stdout_logfile_maxbytes=1MB
 stdout_logfile_backups=10
 stdout_capture_maxbytes=1MB
 stdout_events_enabled=false
-stderr_logfile=/var/log/hemi-access.log
+stderr_logfile=/var/log/hemi-error.log
 stderr_logfile_maxbytes=1MB
 stderr_logfile_backups=10
 ```
@@ -47,4 +47,15 @@ supervisorctl update
 ```
 supervisorctl restart hemi
 ```
-### check status wihem
+### check status with
+```
+supervisorctl status
+```
+![screenshot](image.png)
+
+
+### The command below is to view the logs
+```
+tail -f /var/log/hemi-access.log
+```
+![screenshot](logs-hemi.png)
