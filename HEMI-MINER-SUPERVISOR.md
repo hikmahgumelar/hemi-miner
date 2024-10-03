@@ -7,13 +7,13 @@
 #### 4. mkdir hemi
 #### 5. Extract the Downloaded Archive
 ```sh
-$tar --strip-components=1 -xzvf heminetwork_v0.4.3_linux_amd64.tar.gz -C hemi
+tar --strip-components=1 -xzvf heminetwork_v0.4.3_linux_amd64.tar.gz -C hemi
 ```
 source: https://github.com/ademulyanaDEV/hemi-miner/blob/main/hemi-minerv0.4.3.md
 
-# Install supervisord 
+# Install supervisord for Debian based/ubuntu
 
-##### 1. sudo apt install supervisor
+##### 1. sudo apt update - y && sudo apt install supervisor -y
 ##### 2. nano /etc/supervisor/conf.d/hemi.conf
 ##### 3. config hemi.conf
 ####
@@ -27,7 +27,7 @@ process_name=%(program_name)s
 autostart=true
 autorestart=true
 redirect_stderr=false
-stdout_logfile=/var/log/hemi-error.log
+stdout_logfile=/var/log/hemhemi
 stdout_logfile_maxbytes=1MB
 stdout_logfile_backups=10
 stdout_capture_maxbytes=1MB
@@ -36,20 +36,15 @@ stderr_logfile=/var/log/hemi-access.log
 stderr_logfile_maxbytes=1MB
 stderr_logfile_backups=10
 ```
-### 4. supervisorctl update
-### 5. supervisorctl restart hemi
-### 6. check status with 
-   $supervisorctl status
-###  
-![screenshot](image.png)
-###
-```
-if you want restart service hemi miner 
-$ supervisorctl restart hemi
-``` 
-```
-The command below is to view the logs 
-$ tail -f /var/log/hemi-access.log
-```
-![screenshot](logs-hemi.png)
+### after you save the config, run commands below
 
+### update config
+
+```
+supervisorctl update
+```
+### Restart the service 
+```
+supervisorctl restart hemi
+```
+### check status wihem
