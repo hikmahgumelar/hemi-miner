@@ -1,11 +1,11 @@
 ## **Install Hemi CLI PopMiner** 
 
-## Download and Setup Download the Hemi Network Binary
-
-#### 1. wget https://github.com/hemilabs/heminetwork/releases/download/v0.4.3/heminetwork_v0.4.3_linux_amd64.tar.gz
-#### 2. Create a Directory for Hemi
-#### 3. mkdir hemi
-#### 4. Extract the Downloaded Archive
+## Download and Setup the Hemi Network Binary
+#### 1. sudo su && cd /root
+#### 2. wget https://github.com/hemilabs/heminetwork/releases/download/v0.4.3/heminetwork_v0.4.3_linux_amd64.tar.gz
+#### 3. Create a Directory for Hemi
+#### 4. mkdir hemi
+#### 5. Extract the Downloaded Archive
 ```sh
 $tar --strip-components=1 -xzvf heminetwork_v0.4.3_linux_amd64.tar.gz -C hemi
 ```
