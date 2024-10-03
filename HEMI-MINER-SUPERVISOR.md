@@ -15,7 +15,7 @@ source: https://github.com/ademulyanaDEV/hemi-miner/blob/main/hemi-minerv0.4.3.m
 
 ##### 1. sudo apt update - y && sudo apt install supervisor -y
 ##### 2. nano /etc/supervisor/conf.d/hemi.conf
-##### 3. config hemi.conf
+##### config of hemi.conf
 ####
 ```
 [program:hemi]
