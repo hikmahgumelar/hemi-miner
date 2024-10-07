@@ -59,4 +59,4 @@ tail -f /var/log/hemi-access.log
 ```
 ![screenshot](logs-hemi.png)
 
-source to install binnary from https://github.com/ademulyanaDEV/hemi-miner/blob/main/hemi-minerv0.4.3.md
+source to install binary from https://github.com/ademulyanaDEV/hemi-miner/blob/main/hemi-minerv0.4.3.md
