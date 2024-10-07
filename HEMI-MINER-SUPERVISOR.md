@@ -9,7 +9,6 @@
 ```sh
 tar --strip-components=1 -xzvf heminetwork_v0.4.3_linux_amd64.tar.gz -C hemi
 ```
-source: https://github.com/ademulyanaDEV/hemi-miner/blob/main/hemi-minerv0.4.3.md
 
 # Install supervisord for Debian based/ubuntu
 
@@ -59,3 +58,5 @@ supervisorctl status
 tail -f /var/log/hemi-access.log
 ```
 ![screenshot](logs-hemi.png)
+
+source to install binnary from https://github.com/ademulyanaDEV/hemi-miner/blob/main/hemi-minerv0.4.3.md
