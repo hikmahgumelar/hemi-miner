@@ -31,7 +31,7 @@ stdout_logfile_maxbytes=1MB
 stdout_logfile_backups=10
 stdout_capture_maxbytes=1MB
 stdout_events_enabled=false
-stderr_logfile=/var/log/hemi-error.log
+stderr_logfile=/var/log/hemi-access.log
 stderr_logfile_maxbytes=1MB
 stderr_logfile_backups=10
 ```
